@@ -491,7 +491,7 @@ m = (new CSVParse(tx.value, '"', ",", "\n")).nextMatrix();
 let autos = ' auto';
 for (let i=0; i < m[0].length; i++)
   autos += ' auto';
-var str = "<div  class=heading style=padding-top:-5px;><div id=rowa style=background-color:#009ddc;font-size:5px; onclick=insertRow(0)>+ row</div><div id=rowa style=background-color:#009ddc;font-size:5px; onclick=insertCol(0)>+ col</div></div>";
+var str = "<div  class=heading style=padding-top:-5px;><div id=rowa style=background-color:#009ddc;font-size:9px; onclick=insertRow(0)>+ row</div><div id=rowa style=background-color:#009ddc;font-size:9px; onclick=insertCol(0)>+ col</div></div>";
 for (var j=0; j < m[0].length; j++)
 {
    str += "<div class=heading style=text-align:center;background-color:#009ddc;padding-top:30px; onclick=insertCol(" + (j+1) + ")>" + String.fromCharCode('A'.charCodeAt(0)+j) + "</div>"; 
