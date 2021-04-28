@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+	<style>
+		.div{
+			padding-left: 300px;
+			padding-top: 100px;
+		}
+
+		@keyframes change1 {
+  			from {top: 108px;}
+  			to   {top: 128px;}
+		}
+		@keyframes change2 {
+  			from {top: 181px;}
+  			to   {top: 201px;}
+		}
+		@keyframes change3 {
+  			from {top: 191px;}
+  			to   {top: 211px;}
+		}
+		
+		.top{
+		  width:114px;
+		  height:100px;
+		  border: solid 1px black;
+		  transform: rotate(45deg)
+		  skew(-20deg,-11deg);
+		  position: absolute;
+		  top: 108px;
+			background-image: url("image2.jpg");
+  		    background-size: 114px 120px;
+			animation-name: change1;
+  			animation-duration: 1s;
+ 			animation-delay: 4s;
+		  
+		}
+		.leftside{
+			 width:100px;
+			 height:100px;
+			 border: solid 1px black;
+			 transform: skew(180deg,213deg);
+			 position: absolute;
+			 left: 268px;
+			 top: 181px;
+			background-image: url("20-21 UTM-2.jpg");
+		    background-repeat: no-repeat;
+  		    background-size: 110px 120px;
+			animation-name: change2;
+  			animation-duration: 1s;
+ 			animation-delay: 4s;
+		}
+		.rightside{
+		  width:91px;
+		  height:100px;
+		  border: solid 1px black;
+		  transform: skew(180deg,155deg);
+		  position: absolute;
+		  left: 370px;
+		  top: 191px;
+			background-image: url("image.jpg");
+		    background-repeat: no-repeat;
+  		    background-size: 100px 100px;
+			animation-name: change3;
+  			animation-duration: 1s;
+ 			animation-delay: 4s;
+		}
+
+	</style>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<h1 style="padding-left: 190px"> Kelsey McArthur's Cube</h1>
+	<div class="div">
+  <div class="top"></div>
+  <div class="leftside"></div>
+  <div class="rightside"></div>
+</div>
+</body>
+</html>
